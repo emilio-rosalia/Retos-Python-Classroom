@@ -7,5 +7,5 @@ if numeros_a_introducir < 1:
 else:
     for i in range(numeros_a_introducir):
         dato = float(input(f'Escriba el número {i+1}: '))
-        suma_total = suma_total + dato
+        suma_total = suma_total + dato # suma_total += dato
     print(f'La suma total de los número introducidos es {suma_total}')

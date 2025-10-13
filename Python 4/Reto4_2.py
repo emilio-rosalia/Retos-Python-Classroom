@@ -20,9 +20,9 @@ print('Divisores 2.1')
 if numero <= 0:
     print('¡Le he pedido un entero mayor que cero!')
 else:
-    print(f'Los divisores de {numero} son', end='') # Esto se imprime una única vez
-    for i in range(numero): # Probamos si se puede dividir el número dado por todos los números menores
+    print(f'Los divisores de {numero} son ', end='') # Esto se imprime una única vez
+    for i in range(numero-1): # Probamos si se puede dividir el número dado por todos los números menores
         # Recuerda que empiza en 0 y termina en numero-1, por este motivo le sumo 1
         if numero % (i+1) == 0 : # Comprobamos 
-            print(f', {i+1}', end='')
-    print('.')
+            print(i+1, end=', ')
+    print(f'{numero}.')

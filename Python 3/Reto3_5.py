@@ -1,6 +1,6 @@
 # Reto 5
-# Pedimos un número
-numero_1 = float(input('Introduce un número: '))
+# Pedimos dos números
+numero_1 = float(input('Introduce un número: ')) # Usamos float para permitir número decimales
 numero_2 = float(input(f'Introduce un número menor que {numero_1}: '))
 if numero_2 > numero_1 : # Si el 2º número es mayor que el primero mostramos un mensaje de error.
     print(f'Tenías que introducir un número menor que {numero_1}')

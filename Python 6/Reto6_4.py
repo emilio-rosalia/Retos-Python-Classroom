@@ -16,3 +16,7 @@ for i in range(len(lista_de_numeros)-1):
     print(f' {lista_de_numeros[i]},', end='')
 # Mostramos el último número
 print(f' {lista_de_numeros[len(lista_de_numeros)-1]}.')
+
+# Ordenamos la lista
+lista_de_numeros.sort()
+print('La lista ordenada es', end='')

@@ -1,22 +1,18 @@
-# Reto 3
-# Halla la descomposición factorial de un número pedido.
-
-# Pedimos un número hasta que de introduzcan solo digitos y no sea 0
-numero = input('Introduce un número entero positivo: ')
-while not (numero.isdigit() and numero !='0') :
-    numero = input('Error !!\nIntroduce un número entero positivo: ')
-
-numero=int(numero)
-
-divisores = [] # Lista vacía donde vamos a guardar la descomposición factorial
-i = 2 # El primer divisor primo de un número es el 2
-
-while i <= numero: 
-    if (numero % i == 0): # Comprobamos si i es divisor del número 
-        divisores.append(i) # Lo guardamos
-        numero = numero/i   # Dividimos el número por el divisor
-    else: # Si no es divisor pruebo con el siguiente
-        i = i+1       
-    
-
-print(f"Los divisores de {numero} son: {divisores}")
+# Reto Fibonacci
+print('Los cincuenta primeros terminos de la sucesión de fibonacci.')
+# a_1 y a_2 almacenan los dos núemeros anteriores que se necesitan para
+# calcular el siguiente término.
+a_1=0
+a_2=1
+# Imprimo los dos primeros terminos de la sucesión.
+print(f"{a_1}, {a_2}, ", end="")
+# Repito el bucle 47 veces porque en la útima iteración no necesito la coma al final.
+for turno in range(47):
+    a_3=a_1 +a_2
+    print(a_3, end=", ")
+    # Guardo en a_1 y a_2 los terminos para calcular el termino siguiente.
+    a_1 = a_2
+    a_2 = a_3
+# Calculo el último termino de forma separa para poner un punto en vez de una coma.
+a_3=a_1 +a_2
+print(f"{a_3}.")

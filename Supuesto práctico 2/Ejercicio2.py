@@ -1,5 +1,5 @@
 # Ejercicio 2
-precio_metro = 2 # Precio en € de varnizar 1 m² sin IVA
+precio_metro = 2 # Precio en € de barnizar 1 m² sin IVA
 presupuesto_disponible = float(input('Indique el presupuesto del que dispone: '))
 ancho = float(input('Indica el ancho de la habitación en m: '))
 largo = float(input('Indica el largo de la habitación en m: '))
